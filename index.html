@@ -7,14 +7,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Colmar Academy</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
         .hero {
-            max-width: auto;
             margin: 0 auto;
         }
 
         .infomation {
-            max-width: auto;
-            margin: 0 auto;
+            margin-left: 72px;
+            margin-right: 72px;
         }
 
         .hero>div {
@@ -25,28 +33,22 @@
             color: #d9480f;
         }
 
-        .infomation>div {
+        .title h1 {
+            text-align: center;
+            margin: 32px;
+
+        }
+
+        /* .infomation>div {
             border: 2px solid rgb(233, 233, 233);
             border-radius: 5px;
             background-color: rgba(109, 107, 107, 0.603);
             color: #d9480f;
-        }
+        } */
 
         .class1 {
             grid-column: 1 / 4;
             grid-row: 1 / 4;
-        }
-
-        .class2 {
-            margin-left: 72px;
-            margin-right: 72px;
-            grid-column: 1 / 4;
-            grid-row: 1 / 4;
-        }
-
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
         }
 
         .topnav {
@@ -75,12 +77,12 @@
             grid-auto-rows: minmax(100px, auto);
         }
 
-        .infomation {
+        /* .infomation {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 10px;
             grid-auto-rows: minmax(100px, auto);
-        }
+        } */
 
         div.gallery {
             border: 1px solid #ccc;
@@ -96,21 +98,29 @@
         }
 
         div.desc {
-            padding: 15px;
-            text-align: center;
+            margin: 16px;
+            text-align: left;
         }
 
-        * {
-            box-sizing: border-box;
+        div.detailed-desc {
+            margin: 16px;
+            text-align: left;
+            font-size: x-large;
+            font-weight: 400;
         }
+
 
         .responsive {
-            margin: 32px 32px;
             float: left;
             width: 33.33%;
         }
 
+
         @media screen and (max-width: 600px) {
+            .responsive {
+                width: 100%;
+            }
+
             .topnav a:not(:first-child) {
                 display: none;
             }
@@ -136,19 +146,6 @@
                 text-align: left;
             }
         }
-
-        @media only screen and (max-width: 700px) {
-            .responsive {
-                width: 49.99999%;
-                
-            }
-        }
-
-        @media only screen and (max-width: 500px) {
-            .responsive {
-                width: 100%;
-            }
-        }
     </style>
 </head>
 
@@ -170,63 +167,65 @@
             </div>
         </section>
         <section class="infomation">
-            <div class="class2">
-                <div class="responsive">
-                    <div class="gallery">
-                        <a target="_blank" href="img_5terre.jpg">
-                            <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
-                        </a>
-                        <div class="desc">Add a description of the image here</div>
-                    </div>
-                </div>
-
-
-                <div class="responsive">
-                    <div class="gallery">
-                        <a target="_blank" href="img_forest.jpg">
-                            <img src="img_forest.jpg" alt="Forest" width="600" height="400">
-                        </a>
-                        <div class="desc">Add a description of the image here</div>
-                    </div>
-                </div>
-
-                <div class="responsive">
-                    <div class="gallery">
-                        <a target="_blank" href="img_lights.jpg">
-                            <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
-                        </a>
-                        <div class="desc">Add a description of the image here</div>
-                    </div>
-                </div>
-
-                <div class="responsive">
-                    <div class="gallery">
-                        <a target="_blank" href="img_5terre.jpg">
-                            <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
-                        </a>
-                        <div class="desc">Add a description of the image here</div>
-                    </div>
-                </div>
-
-
-                <div class="responsive">
-                    <div class="gallery">
-                        <a target="_blank" href="img_forest.jpg">
-                            <img src="img_forest.jpg" alt="Forest" width="600" height="400">
-                        </a>
-                        <div class="desc">Add a description of the image here</div>
-                    </div>
-                </div>
-
-                <div class="responsive">
-                    <div class="gallery">
-                        <a target="_blank" href="img_lights.jpg">
-                            <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
-                        </a>
-                        <div class="desc">Add a description of the image here</div>
-                    </div>
+            <div class="title">
+                <h1>Start Learning</h1>
+            </div>
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="asset/images/course-software.jpg">
+                        <img src="asset/images/course-software.jpg" alt="Cinque Terre" width="600" height="400">
+                    </a>
+                    <div class="detailed-desc">Software engineering</div>
+                    <div class="desc">COURSES</div>
+                    <div class="desc">Web Development, Mobile Development, iOT APIs</div>
                 </div>
             </div>
+            
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="img_forest.jpg">
+                        <img src="img_forest.jpg" alt="Forest" width="600" height="400">
+                    </a>
+                    <div class="desc">Add a description of the image here</div>
+                </div>
+            </div>
+
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="img_lights.jpg">
+                        <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
+                    </a>
+                    <div class="desc">Add a description of the image here</div>
+                </div>
+            </div>
+
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="img_5terre.jpg">
+                        <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+                    </a>
+                    <div class="desc">Add a description of the image here</div>
+                </div>
+            </div>
+
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="img_forest.jpg">
+                        <img src="img_forest.jpg" alt="Forest" width="600" height="400">
+                    </a>
+                    <div class="desc">Add a description of the image here</div>
+                </div>
+            </div>
+
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="img_lights.jpg">
+                        <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
+                    </a>
+                    <div class="desc">Add a description of the image here</div>
+                </div>
+            </div>
+
         </section>
         <section class="course">
             <div>
