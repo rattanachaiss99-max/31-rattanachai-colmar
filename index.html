@@ -7,6 +7,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Colmar Academy</title>
     <style>
+
+        .hero {
+            max-width: auto;
+            margin: 0 auto;
+        }
+
+        .hero>div {
+            border: 2px solid rgb(233, 233, 233);
+            border-radius: 5px;
+            background-color: rgba(194, 194, 194, 0.5);
+            padding: 1em;
+            color: #d9480f;
+        }
+
+        .class1 {
+            grid-column: 1 / 4;
+            grid-row: 1 / 4;
+        }
+
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
@@ -29,6 +48,13 @@
 
         .topnav .icon {
             display: none;
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            grid-auto-rows: minmax(100px, auto);
         }
 
         @media screen and (max-width: 600px) {
