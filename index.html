@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Colmar Academy</title>
     <style>
+        .content {
+            margin-left: 72px;
+            margin-right: 72px;
+        }
+
         * {
             box-sizing: border-box;
         }
@@ -20,11 +25,6 @@
             margin: 0 auto;
         }
 
-        .infomation {
-            margin-left: 72px;
-            margin-right: 72px;
-        }
-
         .hero>div {
             border: 2px solid rgb(233, 233, 233);
             border-radius: 5px;
@@ -36,15 +36,7 @@
         .title h1 {
             text-align: center;
             margin: 32px;
-
         }
-
-        /* .infomation>div {
-            border: 2px solid rgb(233, 233, 233);
-            border-radius: 5px;
-            background-color: rgba(109, 107, 107, 0.603);
-            color: #d9480f;
-        } */
 
         .class1 {
             grid-column: 1 / 4;
@@ -77,15 +69,9 @@
             grid-auto-rows: minmax(100px, auto);
         }
 
-        /* .infomation {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-            grid-auto-rows: minmax(100px, auto);
-        } */
-
         div.gallery {
             border: 1px solid #ccc;
+
         }
 
         div.gallery:hover {
@@ -109,14 +95,19 @@
             font-weight: 400;
         }
 
+        div.explain-desc {
+            margin: 16px 16px 24px 16px;
+            text-align: left;
+        }
 
         .responsive {
             float: left;
-            width: 33.33%;
+            width: 33%;
+            margin-right: 32px;
+            margin-bottom: 32px;
         }
 
-
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 700px) {
             .responsive {
                 width: 100%;
             }
@@ -145,6 +136,17 @@
                 display: block;
                 text-align: left;
             }
+
+            .content {
+                margin: 16px;
+            }
+
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            background-color: DodgerBlue;
         }
     </style>
 </head>
@@ -160,84 +162,87 @@
             </div>
         </nav>
     </header>
-    <main>
-        <section class="hero">
-            <div class="class1">
 
-            </div>
-        </section>
-        <section class="infomation">
-            <div class="title">
-                <h1>Start Learning</h1>
-            </div>
-            <div class="responsive">
-                <div class="gallery">
-                    <a target="_blank" href="asset/images/course-software.jpg">
-                        <img src="asset/images/course-software.jpg" alt="Cinque Terre" width="600" height="400">
-                    </a>
-                    <div class="detailed-desc">Software engineering</div>
-                    <div class="desc">COURSES</div>
-                    <div class="desc">Web Development, Mobile Development, iOT APIs</div>
-                </div>
-            </div>
-            
-            <div class="responsive">
-                <div class="gallery">
-                    <a target="_blank" href="img_forest.jpg">
-                        <img src="img_forest.jpg" alt="Forest" width="600" height="400">
-                    </a>
-                    <div class="desc">Add a description of the image here</div>
-                </div>
-            </div>
+    <section class="hero">
+        <div class="class1">
 
-            <div class="responsive">
-                <div class="gallery">
-                    <a target="_blank" href="img_lights.jpg">
-                        <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
-                    </a>
-                    <div class="desc">Add a description of the image here</div>
-                </div>
-            </div>
+        </div>
+    </section>
 
-            <div class="responsive">
-                <div class="gallery">
-                    <a target="_blank" href="img_5terre.jpg">
-                        <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
-                    </a>
-                    <div class="desc">Add a description of the image here</div>
-                </div>
+    <section class="infomation">
+        <div class="title">
+            <h1>Start Learning</h1>
+        </div>
+        <div class="content">
+        <div class="responsive">
+            <div class="gallery">
+                <img src="asset/images/course-software.jpg" alt="computer-software-engineer" width="600" height="400">
+                <div class="detailed-desc">Software engineering</div>
+                <div class="desc">COURSES</div>
+                <div class="explain-desc">Web Development, Mobile Development, iOT APIs</div>
             </div>
+        </div>
 
-            <div class="responsive">
-                <div class="gallery">
-                    <a target="_blank" href="img_forest.jpg">
-                        <img src="img_forest.jpg" alt="Forest" width="600" height="400">
-                    </a>
-                    <div class="desc">Add a description of the image here</div>
-                </div>
+        <div class="responsive">
+            <div class="gallery">
+                <img src="asset/images/course-computer-art.jpg" alt="computer-art" width="600" height="400">
+                <div class="detailed-desc">Computer Art</div>
+                <div class="desc">COURSES</div>
+                <div class="explain-desc">Imaging & Design, Web Design, Motion Graphics & Visual Effects,
+                    Computer
+                    Animation</div>
             </div>
+        </div>
 
-            <div class="responsive">
-                <div class="gallery">
-                    <a target="_blank" href="img_lights.jpg">
-                        <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
-                    </a>
-                    <div class="desc">Add a description of the image here</div>
-                </div>
+        <div class="responsive">
+            <div class="gallery">
+                <img src="asset/images/course-design.jpg" alt="computer-art-camera" width="600" height="400">
+                <div class="detailed-desc">Design</div>
+                <div class="desc">COURSES</div>
+                <div class="explain-desc">User Experience, User Research, Visual Design</div>
             </div>
+        </div>
 
-        </section>
-        <section class="course">
-            <div>
-
+        <div class="responsive">
+            <div class="gallery">
+                <img src="asset/images/course-business.jpg" alt="computer-art-camera" width="600" height="400">
+                <div class="detailed-desc">Data</div>
+                <div class="desc">COURSES</div>
+                <div class="explain-desc">Data Science, Big Data, SQL, Data Visualization</div>
             </div>
-        </section>
-        <section class="thesis">
-            <div>
+        </div>
 
+        <div class="responsive">
+            <div class="gallery">
+                <img src="asset/images/course-business.jpg" alt="computer-art-camera" width="600" height="400">
+                <div class="detailed-desc">Bussiness</div>
+                <div class="desc">COURSES</div>
+                <div class="explain-desc">Product Development, Bussiness Development, Startup</div>
             </div>
-        </section>
-    </main>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <img src="asset/images/course-marketing.jpg" alt="computer-art-camera" width="600" height="400">
+                <div class="detailed-desc">Marketing</div>
+                <div class="desc">COURSES</div>
+                <div class="explain-desc">Analytics, Content Marketing, Mobile Marketing</div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="course">
+        <div>
+
+        </div>
+    </section>
+
+    <section class="thesis">
+        <div>
+
+        </div>
+    </section>
 
     <footer>
         <div>
@@ -245,16 +250,7 @@
         </div>
     </footer>
 
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-    </script>
+
 </body>
 
 </html>
